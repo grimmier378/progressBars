@@ -4,6 +4,8 @@ Reusable animated horizontal and vertical progress bars for MacroQuest Lua.
 
 This project separates the reusable bar logic (progressBars.lua) from the demo/showcase implementation (init.lua) so you can drop the bar system into other scripts easily.
 
+TLDR Demo video https://youtu.be/zPo3HA0fzd0
+
 🎯 Intent
 
 The goal of this project is:
