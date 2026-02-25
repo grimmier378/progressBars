@@ -2,8 +2,6 @@ Progress Bars (MacroQuest Lua + ImGui + ImAnim)
 
 Reusable animated horizontal and vertical progress bars for MacroQuest Lua.
 
-This project separates the reusable bar logic (progressBars.lua) from the demo/showcase implementation (init.lua) so you can drop the bar system into other scripts easily.
-
 TLDR Demo video https://youtu.be/zPo3HA0fzd0
 
 🎯 Intent
@@ -109,8 +107,6 @@ Adjustable speed and width
 
 Subtle highlight at fill boundary
 
-Clamped so it does not extend past fill
-
 ✔ Tick Marks
 
 Custom spacing (e.g. every 5%, 10%, etc.)
@@ -121,8 +117,6 @@ Adjustable thickness and opacity
 
 Static color
 
-Optional con-color tracking
-
 Adjustable thickness
 
 ✔ Overlay Support (Mask / Styling Layer)
@@ -131,11 +125,11 @@ Supports PNG overlays:
 
 Static overlay (full mask shown regardless of fill)
 
-Clipped overlay (only visible over filled portion)
+Clipped overlay (only visible over filled portion) useful for custom fill graphics
 
 Useful for:
 
-Dragon cutout masks
+Cutout masks
 
 Decorative glass effects
 
@@ -196,13 +190,9 @@ Common options:
 
 Feature Horizontal Vertical
 
-Fill Direction Left → Right Bottom → Top
+Fill Direction Left → Right, or Bottom → Top
 
 Gradient Default "lr" "tb"
-
-Glow Direction Right edge Top edge
-
-Ticks Vertical lines Horizontal lines
 
 🧠 Design Notes
 
@@ -226,6 +216,3 @@ Optional vertical text rotation (requires ImGui transform bindings)
 
 Rounded multi-color gradient fill support
 
-Optional masked glow blending
-
-Config serialization helper
